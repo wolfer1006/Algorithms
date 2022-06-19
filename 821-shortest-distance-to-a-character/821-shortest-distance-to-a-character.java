@@ -2,7 +2,6 @@ class Solution {
     public int[] shortestToChar(String s, char c) {
         //Get count of occurences of c
         long count = s.chars().filter(ch -> ch == c).count();
-        System.out.println(count);
         
         //Find the indices of those
         int[] indices = new int[(int)count];
@@ -11,7 +10,6 @@ class Solution {
             if(s.charAt(i) == c)
                 indices[indicesCount++] = i;
         }
-        System.out.println(Arrays.toString(indices));
         
         //Loop through s, forward AND back
         int[] forward = new int[s.length()];
