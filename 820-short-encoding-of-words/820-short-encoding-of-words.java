@@ -8,7 +8,6 @@ class Solution {
                 }
             }
         }
-        System.out.println(Arrays.toString(words));
         
         //Build a new String
         String validEncoding = new String();
